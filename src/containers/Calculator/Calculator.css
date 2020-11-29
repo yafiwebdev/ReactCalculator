@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'digital-7';
+  src: url("../../fonts/digital-7.ttf");
+}
+
+#Calculator {
+  width: 248px;
+  height: 370px;
+  border-radius: 5px;
+  margin: 0 auto;
+  position: relative;
+  top: 10em;
+  color: white;
+  font-weight: bold;
+}
+
+#Calculator #Display {
+  background-color: grey;
+  height: 65px;
+  margin: 1px;
+  border-radius: 5px;
+  font-family: digital-7, sans-serif;
+  font-weight: normal;
+}
+
+#Calculator #Display #Operation {
+  height: 30%;
+  font-size: 1.2em;
+  color: #45ff54;
+}
+
+#Calculator #Display #Output {
+  height: 70%;
+  font-size: 2.8em;
+  color: white;
+}
+
+#Calculator #Display span {
+  position: absolute;
+  right: 3px;
+}
+
+#Calculator #Keypad .Key {
+  margin: 1px;
+  border-radius: 5px;
+  float: left;
+  background-color: grey;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#Calculator #Keypad .Key span {
+  position: relative;
+  top: 35%;
+}
+
+#Calculator #Keypad .Key:hover {
+  opacity: 0.9;
+}
+
+#Calculator #Keypad .KeyFlash {
+  -webkit-box-shadow: 0 0 1px 1px #fff inset;
+          box-shadow: 0 0 1px 1px #fff inset;
+}
+
+#Calculator #Keypad .ArithmeticOperator {
+  background-color: #1d1f20;
+}
+
+#Calculator #Keypad .Wide {
+  width: 122px;
+}
+
+#Calculator #Keypad #clearAll {
+  background-color: #d12212;
+}
+
+#Calculator #Keypad #clear {
+  background-color: rgba(249, 93, 93, 0.77);
+}
+
+#Calculator #Keypad #equal {
+  background-color: #31c542;
+}
+/*# sourceMappingURL=Calculator.css.map */

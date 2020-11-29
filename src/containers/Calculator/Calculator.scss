@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url("../../fonts/digital-7.ttf");
+}
+
+#Calculator {
+    width: 248px;
+    height: 370px;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    top: 10em;
+    color: white;
+    font-weight: bold;
+
+    #Display {
+        background-color: grey;
+        height: 65px;
+        margin: 1px;
+        border-radius: 5px;
+        font-family: digital-7, sans-serif;
+        font-weight: normal;
+// TODO: Prevent numbers from overflowing out of contrainer or onto others
+// Hide them starting from left to right(or delete the older ones completely)
+        #Operation {
+            height: 30%;
+            font-size: 1.2em;
+            color: #45ff54;
+        }
+
+        #Output {
+            height: 70%;
+            font-size: 2.8em;
+            color: white;
+        }
+
+        span {
+            position: absolute;
+            right: 3px;
+        }
+    }
+
+    #Keypad {
+        .Key {
+            margin: 1px;
+            border-radius: 5px;
+            float: left;
+            background-color: grey;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            text-align: center;
+
+            span {
+                position: relative;
+                top: 35%;
+            }
+        }
+
+        .Key:hover {
+            opacity: 0.9;
+        }
+
+        .KeyFlash {
+            box-shadow: 0 0 1px 1px #fff inset;
+        }
+
+        .ArithmeticOperator {
+            background-color: #1d1f20;
+        }
+
+        .Wide {
+            width: 122px;
+        }
+
+        #clearAll {
+            background-color: #d12212;
+        }
+
+        #clear {
+            background-color: rgba(249, 93, 93, 0.77);
+        }
+
+        #equal {
+            background-color: #31c542;
+        }
+
+    }
+
+}
